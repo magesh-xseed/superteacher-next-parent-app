@@ -200,6 +200,77 @@ figcaption .why { color: var(--text); }
 .cov td:nth-child(2) { white-space: nowrap; }
 .cov .fhead td { background: var(--sunk); font-family: var(--display); font-weight: 600; color: var(--ink); font-size: 14.5px; }
 .p-gap { background: var(--red-soft); color: var(--red-ink); }
+
+/* Titanium device frame */
+.phone { position: relative; width: 100%; max-width: 100%; aspect-ratio: auto; padding: 3px; border-radius: 40px; overflow: visible;
+  background: linear-gradient(150deg, #9a978f 0%, #e4e1da 14%, #7b7872 30%, #c9c5be 52%, #6a6762 72%, #d2cec7 88%, #8c8983 100%);
+  box-shadow: 0 0 0 .5px rgba(0,0,0,.35), 0 2px 3px rgba(21,20,57,.12), 0 26px 50px -22px rgba(21,20,57,.45); }
+.phone::before, .phone::after { content: ""; position: absolute; width: 3px; border-radius: 2px; background: linear-gradient(90deg, #6f6c66, #c9c5be); }
+.phone::before { left: -3px; top: 17%; height: 5%; box-shadow: 0 46px 0 0 #8a877f, 0 90px 0 0 #8a877f; }
+.phone::after { right: -3px; top: 25%; height: 10%; }
+.glass { border-radius: 37px; border: 5px solid #0a0a0b; background: #fff; overflow: hidden; display: grid; }
+.glass img { display: block; width: 100%; height: auto; border-radius: 0; background: #fff; object-fit: initial; }
+.sb { height: 34px; padding: 0 22px 0 26px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; background: #fff; color: #0b0b0c; font: 600 13px/1 -apple-system, "SF Pro Text", var(--body); }
+.island { display: block; width: 32%; max-width: 92px; height: 22px; border-radius: 999px; background: #0a0a0b; justify-self: center; margin-top: 2px; }
+.sb-sys { justify-self: end; display: inline-flex; gap: 4px; align-items: center; }
+.sb-sys svg { height: 10px; width: auto; fill: currentColor; }
+.sb-sys svg:last-child { height: 11px; }
+figure .phone { cursor: zoom-in; }
+figure .phone:focus-visible { outline: 2px solid var(--red); outline-offset: 5px; }
+.fan .phone { box-shadow: 0 30px 70px -20px rgba(0,0,0,.7); }
+.fan .glass { border-width: 4px; }
+.fan .sb { height: 26px; font-size: 10px; padding: 0 14px 0 18px; }
+.fan .island { height: 16px; }
+.fan .sb-sys svg { height: 7px; }
+
+/* Pacing */
+.stage { padding-block: 112px 16px; gap: 30px; border-top: 1px solid var(--line); margin-top: 40px; }
+.stage-head { row-gap: 10px; }
+.strip { gap: 30px; padding: 14px 8px 34px; }
+figure { flex-basis: 244px; gap: 16px; }
+footer { padding-block: 72px 56px; }
+
+/* Overview matrix */
+.overview { padding-block: 88px 8px; display: grid; gap: 28px; }
+.mx-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 22px; background: var(--line); }
+.matrix { display: grid; grid-template-columns: repeat(7, minmax(150px, 1fr)); grid-template-rows: repeat(5, auto); gap: 1px; min-width: 1050px; }
+.mx-col { background: var(--surface); padding: 22px 18px 20px; display: grid; grid-row: span 5; grid-template-rows: subgrid; row-gap: 12px; text-decoration: none; color: var(--text); min-width: 0; transition: background .2s; }
+.mx-col:hover { background: var(--sunk); }
+.mx-num { font-family: var(--display); font-size: 30px; font-weight: 600; line-height: 1; color: transparent; -webkit-text-stroke: 1.2px var(--red); font-variant-numeric: tabular-nums; }
+.mx-name { font-family: var(--display); font-weight: 600; font-size: 16px; color: var(--ink); line-height: 1.25; }
+.mx-row { display: grid; gap: 3px; font-size: 13px; line-height: 1.45; padding-top: 12px; border-top: 1px solid var(--line); }
+.mx-row em { font-style: normal; font-size: 10.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.mx-count b { font-family: var(--display); font-size: 22px; font-weight: 600; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+/* Inspection modal */
+.lb { border: 0; padding: 0; margin: 0; width: 100%; max-width: 100%; height: 100%; max-height: 100%; background: transparent; color: var(--ink); }
+.lb::backdrop { background: color-mix(in srgb, var(--bg) 62%, transparent); -webkit-backdrop-filter: blur(22px) saturate(1.3); backdrop-filter: blur(22px) saturate(1.3); }
+.lb[open] { display: grid; grid-template-columns: auto minmax(0, auto) auto; align-items: center; justify-content: center; gap: clamp(8px, 3vw, 40px);
+  padding: calc(24px + env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) calc(24px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+.lb-stage { display: grid; gap: 18px; justify-items: center; min-width: 0; }
+.lb-stage .phone { width: min(360px, calc((100dvh - 190px) * .46), 78vw); cursor: default; }
+.lb-cap { display: grid; gap: 4px; text-align: center; max-width: 42ch; }
+.lb-cap .step { font-size: 12px; }
+.lb-cap b { font-family: var(--display); font-size: 18px; font-weight: 600; color: var(--ink); }
+.lb-cap span.why { color: var(--muted); font-size: 14.5px; }
+.lb-count { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; letter-spacing: .06em; }
+.lb-btn { width: 48px; height: 48px; border-radius: 50%; border: 1px solid var(--line); background: color-mix(in srgb, var(--surface) 80%, transparent); color: var(--ink); display: grid; place-items: center; cursor: pointer; font: 500 20px/1 var(--body); }
+.lb-btn:hover { background: var(--surface); }
+.lb-btn:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+.lb-close { position: fixed; top: calc(16px + env(safe-area-inset-top, 0px)); right: max(16px, env(safe-area-inset-right, 0px)); width: 42px; height: 42px; }
+.lb-hint { position: fixed; bottom: calc(14px + env(safe-area-inset-bottom, 0px)); left: 0; right: 0; text-align: center; font-size: 12px; color: var(--muted); }
+.lb-hint kbd { font: 600 11px/1 var(--body); padding: 3px 6px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+@media (max-width: 620px) {
+  .lb[open] { grid-template-columns: 1fr; }
+  .lb-prev, .lb-next { display: none; }
+  .lb-hint { display: none; }
+  .stage { padding-block: 72px 8px; }
+  figure { flex-basis: 210px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .lb[open] .lb-stage { animation: lbIn .22s ease-out; }
+  @keyframes lbIn { from { transform: scale(.97); opacity: .4; } to { transform: none; opacity: 1; } }
+}
 </style>
 
 <section class="hero">
@@ -214,9 +285,9 @@ figcaption .why { color: var(--text); }
       </div>
     </div>
     <div class="fan" aria-hidden="true">
-      <div class="phone p1"><img src="img/04-1-homework-list.jpg" alt="" width="600" height="1298"></div>
-      <div class="phone p2"><img src="img/03-1-my-child.jpg" alt="" width="600" height="1298"></div>
-      <div class="phone p3"><img src="img/05-1-week.jpg" alt="" width="600" height="1298"></div>
+      <div class="phone p1"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/04-1-homework-list.jpg" alt="" width="600" height="1298"></div></div>
+      <div class="phone p2"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/03-1-my-child.jpg" alt="" width="600" height="1298"></div></div>
+      <div class="phone p3"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/05-1-week.jpg" alt="" width="600" height="1298"></div></div>
     </div>
   </div>
 </section>
@@ -224,7 +295,7 @@ figcaption .why { color: var(--text); }
 <nav class="nav" aria-label="Sections">
   <div class="wrap">
     <ol>
-      <li><a href="#coverage"><span>✓</span>Requirements</a></li>
+      <li><a href="#overview"><span>00</span>Overview</a></li>
       <li><a href="#launch"><span>01</span>Launch</a></li>
       <li><a href="#signin"><span>02</span>Sign in</a></li>
       <li><a href="#my-child"><span>03</span>My Child</a></li>
@@ -237,34 +308,64 @@ figcaption .why { color: var(--text); }
 </nav>
 
 <main>
-  <section class="status wrap" id="coverage" aria-labelledby="cov-title" style="padding-block: 56px 8px;">
+  <section class="overview wrap" id="overview" aria-labelledby="ov-title">
     <div class="sec-title">
-      <h2 id="cov-title">Requirements vs. what's built</h2>
-      <p>Parent App items from the NEXT Parent App requirements. Teacher App and content items are outside this app.</p>
+      <span class="stage-kicker">Overview</span>
+      <h2 id="ov-title">Seven stages, launch to report</h2>
+      <p>Tap a column to jump to its screens. Tap any phone to inspect it full size.</p>
     </div>
-    <div class="table-wrap cov">
-      <table>
-        <thead><tr><th>Requirement</th><th>Status</th><th>Screen</th></tr></thead>
-        <tbody>
-          <tr class="fhead"><td colspan="3">Homework</td></tr>
-          <tr><td>Notification when new homework is assigned</td><td><span class="pill p-live">Built</span></td><td>In-app alerts built. Push and WhatsApp need the backend.</td></tr>
-          <tr><td>View homework: instructions, attachments, due date</td><td><span class="pill p-live">Built</span></td><td><a href="#homework">4.1–4.3</a></td></tr>
-          <tr><td>Mark as done: independently or with help, optional note</td><td><span class="pill p-live">Built</span></td><td><a href="#homework">4.6</a></td></tr>
-          <tr><td>"Unable to complete" option, homework stays pending</td><td><span class="pill p-gap">Missing</span></td><td>Not in the form yet</td></tr>
-          <tr><td>Edit submitted feedback</td><td><span class="pill p-live">Built</span></td><td>"Edit feedback" on the details screen</td></tr>
-          <tr><td>See teacher replies to notes</td><td><span class="pill p-live">Built</span></td><td><a href="#homework">4.3–4.5</a></td></tr>
-          <tr class="fhead"><td colspan="3">Weekly Practice</td></tr>
-          <tr><td>Questions per subject, from blocks completed in class</td><td><span class="pill p-live">Built</span></td><td><a href="#practice">5.1–5.3</a> 2 questions per block</td></tr>
-          <tr><td>Answer and see if it's right</td><td><span class="pill p-live">Built</span></td><td><a href="#practice">5.4–5.6</a></td></tr>
-          <tr><td>Explanatory video per block for parents</td><td><span class="pill p-live">Built</span></td><td><a href="#practice">5.2</a></td></tr>
-          <tr><td>No practice in week one, start in week two</td><td><span class="pill p-todo">Backend rule</span></td><td>Shown as "No practice published yet"</td></tr>
-          <tr class="fhead"><td colspan="3">Learnometer</td></tr>
-          <tr><td>View the Learnometer Skills Report</td><td><span class="pill p-live">Built</span></td><td><a href="#learnometer">6.1–6.2</a></td></tr>
-          <tr><td>Monthly question per weak sub-skill, answered in app with instant result</td><td><span class="pill p-gap">Differs</span></td><td><a href="#learnometer">6.3–6.5</a> Built as monthly home activities, not questions</td></tr>
-          <tr><td>History of past monthly practice</td><td><span class="pill p-todo">Partly</span></td><td><a href="#learnometer">6.3</a> Past months of activities</td></tr>
-          <tr><td>Push notification when monthly practice is ready</td><td><span class="pill p-todo">Backend</span></td><td>Not shown</td></tr>
-        </tbody>
-      </table>
+    <div class="mx-scroll">
+      <div class="matrix">
+        <a class="mx-col" href="#launch">
+          <span class="mx-num">01</span>
+          <span class="mx-name">Launch</span>
+          <span class="mx-row"><em>Purpose</em>Introduce the app and its three features.</span>
+          <span class="mx-row"><em>Key moment</em>Splash → three cards → Login or Sign Up</span>
+          <span class="mx-row mx-count"><em>Screens</em><b>4</b></span>
+        </a>
+        <a class="mx-col" href="#signin">
+          <span class="mx-num">02</span>
+          <span class="mx-name">Sign in</span>
+          <span class="mx-row"><em>Purpose</em>Get the parent in with OTP, WhatsApp, password or email.</span>
+          <span class="mx-row"><em>Key moment</em>Mobile OTP by default</span>
+          <span class="mx-row mx-count"><em>Screens</em><b>4</b></span>
+        </a>
+        <a class="mx-col" href="#my-child">
+          <span class="mx-num">03</span>
+          <span class="mx-name">My Child</span>
+          <span class="mx-row"><em>Purpose</em>What the child needs this week, on one screen.</span>
+          <span class="mx-row"><em>Key moment</em>Weekly progress + a question for tonight</span>
+          <span class="mx-row mx-count"><em>Screens</em><b>2</b></span>
+        </a>
+        <a class="mx-col" href="#homework">
+          <span class="mx-num">04</span>
+          <span class="mx-name">Homework</span>
+          <span class="mx-row"><em>Purpose</em>Track homework and tell the teacher how it went.</span>
+          <span class="mx-row"><em>Key moment</em>Mark as done with a note</span>
+          <span class="mx-row mx-count"><em>Screens</em><b>7</b></span>
+        </a>
+        <a class="mx-col" href="#practice">
+          <span class="mx-num">05</span>
+          <span class="mx-name">Weekly Practice</span>
+          <span class="mx-row"><em>Purpose</em>Practise this week's class blocks, with a video.</span>
+          <span class="mx-row"><em>Key moment</em>One question at a time, with reasons</span>
+          <span class="mx-row mx-count"><em>Screens</em><b>6</b></span>
+        </a>
+        <a class="mx-col" href="#learnometer">
+          <span class="mx-num">06</span>
+          <span class="mx-name">Learnometer</span>
+          <span class="mx-row"><em>Purpose</em>How the child is doing, and what to do at home.</span>
+          <span class="mx-row"><em>Key moment</em>Monthly home activity</span>
+          <span class="mx-row mx-count"><em>Screens</em><b>5</b></span>
+        </a>
+        <a class="mx-col" href="#discover">
+          <span class="mx-num">07</span>
+          <span class="mx-name">Not subscribed</span>
+          <span class="mx-row"><em>Purpose</em>Explain Learnometer instead of an empty tab.</span>
+          <span class="mx-row"><em>Key moment</em>Sample report to zoom into</span>
+          <span class="mx-row mx-count"><em>Screens</em><b>6</b></span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -276,10 +377,10 @@ figcaption .why { color: var(--text); }
     </div>
     <p class="purpose"><b>Purpose</b>Introduce the app and its three features before sign-in.</p>
     <div class="strip">
-      <figure><div class="phone"><img src="img/01-1-splash.jpg" alt="Splash screen with the SuperTeacher Next logo" width="600" height="1298"></div><figcaption><span class="step">1.1</span><b>Splash</b><span class="why">Shows the brand while the app starts.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/01-2-onboarding.jpg" alt="Onboarding: Understand Learning Progress" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">1.2</span><b>Learning progress</b><span class="why">Introduces Learnometer.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/01-3-onboarding.jpg" alt="Onboarding: Stay on Top of Homework" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">1.3</span><b>Homework</b><span class="why">Introduces homework and teacher messages.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/01-4-onboarding.jpg" alt="Onboarding: Practice Every Week, with Login and Sign Up" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">1.4</span><b>Weekly practice</b><span class="why">Introduces practice, then leads to Login or Sign Up.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/01-1-splash.jpg" alt="Splash screen with the SuperTeacher Next logo" width="600" height="1298"></div></div><figcaption><span class="step">1.1</span><b>Splash</b><span class="why">Shows the brand while the app starts.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/01-2-onboarding.jpg" alt="Onboarding: Understand Learning Progress" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">1.2</span><b>Learning progress</b><span class="why">Introduces Learnometer.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/01-3-onboarding.jpg" alt="Onboarding: Stay on Top of Homework" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">1.3</span><b>Homework</b><span class="why">Introduces homework and teacher messages.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/01-4-onboarding.jpg" alt="Onboarding: Practice Every Week, with Login and Sign Up" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">1.4</span><b>Weekly practice</b><span class="why">Introduces practice, then leads to Login or Sign Up.</span></figcaption></figure>
     </div>
   </section>
 
@@ -291,10 +392,10 @@ figcaption .why { color: var(--text); }
     </div>
     <p class="purpose"><b>Purpose</b>Get the parent in quickly with mobile OTP, WhatsApp OTP, password or email.</p>
     <div class="strip">
-      <figure><div class="phone"><img src="img/02-1-login.jpg" alt="Login with mobile number and Get OTP" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">2.1</span><b>Login</b><span class="why">Sign in with a mobile number and OTP.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/02-2-password.jpg" alt="Login with password" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">2.2</span><b>Password</b><span class="why">Sign in with a password instead.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/02-3-otp.jpg" alt="Enter OTP" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">2.3</span><b>Enter OTP</b><span class="why">Confirm the code sent to the phone.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/02-4-register.jpg" alt="Create an account form" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">2.4</span><b>Sign up</b><span class="why">Create an account in four fields.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/02-1-login.jpg" alt="Login with mobile number and Get OTP" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">2.1</span><b>Login</b><span class="why">Sign in with a mobile number and OTP.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/02-2-password.jpg" alt="Login with password" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">2.2</span><b>Password</b><span class="why">Sign in with a password instead.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/02-3-otp.jpg" alt="Enter OTP" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">2.3</span><b>Enter OTP</b><span class="why">Confirm the code sent to the phone.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/02-4-register.jpg" alt="Create an account form" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">2.4</span><b>Sign up</b><span class="why">Create an account in four fields.</span></figcaption></figure>
     </div>
   </section>
 
@@ -306,8 +407,8 @@ figcaption .why { color: var(--text); }
     </div>
     <p class="purpose"><b>Purpose</b>Tell the parent what their child needs this week, on one screen.</p>
     <div class="strip">
-      <figure><div class="phone"><img src="img/03-1-my-child.jpg" alt="My Child with This week summary" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">3.1</span><b>This week</b><span class="why">Progress on homework, practice and home activities.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/03-2-my-child-messages.jpg" alt="Teacher messages and Ask Aarav today" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">3.2</span><b>Messages and a question</b><span class="why">Latest teacher note, and a question to ask the child tonight.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/03-1-my-child.jpg" alt="My Child with This week summary" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">3.1</span><b>This week</b><span class="why">Progress on homework, practice and home activities.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/03-2-my-child-messages.jpg" alt="Teacher messages and Ask Aarav today" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">3.2</span><b>Messages and a question</b><span class="why">Latest teacher note, and a question to ask the child tonight.</span></figcaption></figure>
     </div>
   </section>
 
@@ -319,13 +420,13 @@ figcaption .why { color: var(--text); }
     </div>
     <p class="purpose"><b>Purpose</b>See homework from the teacher, track it, and tell the teacher how it went.</p>
     <div class="strip">
-      <figure><div class="phone"><img src="img/04-1-homework-list.jpg" alt="Homework list with Pending, Completed and All" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">4.1</span><b>Homework list</b><span class="why">What's pending, done or overdue.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/04-2-details.jpg" alt="Homework details with instructions" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">4.2</span><b>Details</b><span class="why">The task, due date and instructions.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/04-3-attachments.jpg" alt="Attachments and teacher messages" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">4.3</span><b>Attachments and replies</b><span class="why">Open files and read teacher replies.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/04-4-ask-teacher.jpg" alt="Ask teacher conversation" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">4.4</span><b>Ask teacher</b><span class="why">Message the teacher about this homework.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/04-5-help-request.jpg" alt="Help request form with reasons and optional details" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">4.5</span><b>Help request</b><span class="why">Tell the teacher what the child is stuck on.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/04-6-mark-done.jpg" alt="Homework update form" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">4.6</span><b>Mark as done</b><span class="why">Record how the child finished, with an optional note.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/04-7-done.jpg" alt="Homework marked as done" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">4.7</span><b>Done</b><span class="why">Confirms it's saved and moved to Completed.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/04-1-homework-list.jpg" alt="Homework list with Pending, Completed and All" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">4.1</span><b>Homework list</b><span class="why">What's pending, done or overdue.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/04-2-details.jpg" alt="Homework details with instructions" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">4.2</span><b>Details</b><span class="why">The task, due date and instructions.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/04-3-attachments.jpg" alt="Attachments and teacher messages" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">4.3</span><b>Attachments and replies</b><span class="why">Open files and read teacher replies.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/04-4-ask-teacher.jpg" alt="Ask teacher conversation" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">4.4</span><b>Ask teacher</b><span class="why">Message the teacher about this homework.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/04-5-help-request.jpg" alt="Help request form with reasons and optional details" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">4.5</span><b>Help request</b><span class="why">Tell the teacher what the child is stuck on.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/04-6-mark-done.jpg" alt="Homework update form" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">4.6</span><b>Mark as done</b><span class="why">Record how the child finished, with an optional note.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/04-7-done.jpg" alt="Homework marked as done" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">4.7</span><b>Done</b><span class="why">Confirms it's saved and moved to Completed.</span></figcaption></figure>
     </div>
   </section>
 
@@ -337,12 +438,12 @@ figcaption .why { color: var(--text); }
     </div>
     <p class="purpose"><b>Purpose</b>Practise what was taught in class this week, with a video so parents can help.</p>
     <div class="strip">
-      <figure><div class="phone"><img src="img/05-1-week.jpg" alt="Current week with four subjects" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">5.1</span><b>This week</b><span class="why">Subjects and blocks ready to practise.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/05-2-subject.jpg" alt="Science block with learning video" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">5.2</span><b>Subject</b><span class="why">Video explaining the block, then start.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/05-3-question.jpg" alt="Practice question" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">5.3</span><b>Question</b><span class="why">One question at a time.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/05-4-correct.jpg" alt="Correct answer feedback" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">5.4</span><b>Correct</b><span class="why">Confirms the answer and why.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/05-5-incorrect.jpg" alt="Wrong answer with explanation" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">5.5</span><b>Incorrect</b><span class="why">Shows the right answer and explains it.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/05-6-result.jpg" alt="Practice result and review" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">5.6</span><b>Result</b><span class="why">Score and a review of every answer.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/05-1-week.jpg" alt="Current week with four subjects" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">5.1</span><b>This week</b><span class="why">Subjects and blocks ready to practise.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/05-2-subject.jpg" alt="Science block with learning video" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">5.2</span><b>Subject</b><span class="why">Video explaining the block, then start.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/05-3-question.jpg" alt="Practice question" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">5.3</span><b>Question</b><span class="why">One question at a time.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/05-4-correct.jpg" alt="Correct answer feedback" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">5.4</span><b>Correct</b><span class="why">Confirms the answer and why.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/05-5-incorrect.jpg" alt="Wrong answer with explanation" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">5.5</span><b>Incorrect</b><span class="why">Shows the right answer and explains it.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/05-6-result.jpg" alt="Practice result and review" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">5.6</span><b>Result</b><span class="why">Score and a review of every answer.</span></figcaption></figure>
     </div>
   </section>
 
@@ -354,15 +455,15 @@ figcaption .why { color: var(--text); }
     </div>
     <p class="purpose"><b>Purpose</b>Show how the child is doing, and what to practise at home.</p>
     <div class="strip">
-      <figure><div class="phone"><img src="img/06-1-overview.jpg" alt="Overall score 79 out of 100" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">6.1</span><b>Overall score</b><span class="why">How the child did, at a glance.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/06-2-scores.jpg" alt="Subject and skill scores" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">6.2</span><b>Subjects and skills</b><span class="why">Scores by subject and skill.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/06-3-activities.jpg" alt="Monthly home activities" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">6.3</span><b>Monthly activities</b><span class="why">This month's goal and activities.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/06-4-activity-detail.jpg" alt="Home activity detail with learning gap, goal and materials" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">6.4</span><b>Activity detail</b><span class="why">Why this activity, its goal and what you need.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/06-5-activity-steps.jpg" alt="Activity steps checklist with 2 of 4 completed and a parent tip" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">6.5</span><b>Activity steps</b><span class="why">Tick off steps, then mark the activity complete.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/06-1-overview.jpg" alt="Overall score 79 out of 100" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">6.1</span><b>Overall score</b><span class="why">How the child did, at a glance.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/06-2-scores.jpg" alt="Subject and skill scores" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">6.2</span><b>Subjects and skills</b><span class="why">Scores by subject and skill.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/06-3-activities.jpg" alt="Monthly home activities" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">6.3</span><b>Monthly activities</b><span class="why">This month's goal and activities.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/06-4-activity-detail.jpg" alt="Home activity detail with learning gap, goal and materials" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">6.4</span><b>Activity detail</b><span class="why">Why this activity, its goal and what you need.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/06-5-activity-steps.jpg" alt="Activity steps checklist with 2 of 4 completed and a parent tip" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">6.5</span><b>Activity steps</b><span class="why">Tick off steps, then mark the activity complete.</span></figcaption></figure>
     </div>
   </section>
 
-  <section class="stage wrap" id="discover" style="padding-bottom: 56px;">
+  <section class="stage wrap" id="discover">
     <div class="stage-head">
       <span class="stage-num">07</span>
       <span class="stage-kicker">Feature 3 · school not subscribed</span>
@@ -370,15 +471,76 @@ figcaption .why { color: var(--text); }
     </div>
     <p class="purpose"><b>Purpose</b>Explain Learnometer instead of showing an empty tab.</p>
     <div class="strip">
-      <figure><div class="phone"><img src="img/07-1-not-subscribed.jpg" alt="Not available yet" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">7.1</span><b>Not available</b><span class="why">Says the school hasn't subscribed.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/07-2-explore.jpg" alt="What is Learnometer" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">7.2</span><b>What it is</b><span class="why">What Learnometer measures.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/07-3-explore.jpg" alt="Why it matters" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">7.3</span><b>Why it matters</b><span class="why">How it helps the child.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/07-4-explore.jpg" alt="What you'll get" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">7.4</span><b>What you get</b><span class="why">What's included once subscribed.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/07-5-explore.jpg" alt="Sample report" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">7.5</span><b>Sample report</b><span class="why">A real report to zoom into.</span></figcaption></figure>
-      <figure><div class="phone"><img src="img/07-6-explore.jpg" alt="Not yet available" width="600" height="1298" loading="lazy"></div><figcaption><span class="step">7.6</span><b>Close</b><span class="why">Access is the school's decision.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/07-1-not-subscribed.jpg" alt="Not available yet" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">7.1</span><b>Not available</b><span class="why">Says the school hasn't subscribed.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/07-2-explore.jpg" alt="What is Learnometer" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">7.2</span><b>What it is</b><span class="why">What Learnometer measures.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/07-3-explore.jpg" alt="Why it matters" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">7.3</span><b>Why it matters</b><span class="why">How it helps the child.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/07-4-explore.jpg" alt="What you'll get" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">7.4</span><b>What you get</b><span class="why">What's included once subscribed.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/07-5-explore.jpg" alt="Sample report" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">7.5</span><b>Sample report</b><span class="why">A real report to zoom into.</span></figcaption></figure>
+      <figure><div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img src="img/07-6-explore.jpg" alt="Not yet available" width="600" height="1298" loading="lazy"></div></div><figcaption><span class="step">7.6</span><b>Close</b><span class="why">Access is the school's decision.</span></figcaption></figure>
     </div>
   </section>
 </main>
+
+
+<dialog class="lb" id="lb" aria-label="Screen inspector">
+  <button class="lb-btn lb-prev" id="lb-prev" type="button" aria-label="Previous screen">←</button>
+  <div class="lb-stage">
+    <div class="lb-count" id="lb-count"></div>
+    <div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img id="lb-img" src="" alt=""></div></div>
+    <div class="lb-cap"><span class="step" id="lb-step"></span><b id="lb-title"></b><span class="why" id="lb-why"></span></div>
+  </div>
+  <button class="lb-btn lb-next" id="lb-next" type="button" aria-label="Next screen">→</button>
+  <button class="lb-btn lb-close" id="lb-close" type="button" aria-label="Close">✕</button>
+  <div class="lb-hint"><kbd>←</kbd> <kbd>→</kbd> to move · <kbd>Esc</kbd> to close</div>
+</dialog>
+<script>
+(() => {
+  const figs = [...document.querySelectorAll('main figure')];
+  const lb = document.getElementById('lb');
+  const $ = (id) => document.getElementById(id);
+  let i = 0, opener = null;
+  const show = (n) => {
+    i = (n + figs.length) % figs.length;
+    const f = figs[i], img = f.querySelector('img');
+    $('lb-img').src = img.getAttribute('src');
+    $('lb-img').alt = img.alt;
+    $('lb-step').textContent = f.querySelector('.step')?.textContent || '';
+    $('lb-title').textContent = f.querySelector('figcaption b')?.textContent || '';
+    $('lb-why').textContent = f.querySelector('.why')?.textContent || '';
+    $('lb-count').textContent = (i + 1) + ' / ' + figs.length;
+  };
+  const open = (n, el) => {
+    opener = el; show(n);
+    if (typeof lb.showModal === 'function') lb.showModal(); else lb.setAttribute('open', '');
+  };
+  const close = () => { lb.open && lb.close ? lb.close() : lb.removeAttribute('open'); };
+  figs.forEach((f, n) => {
+    const p = f.querySelector('.phone');
+    p.tabIndex = 0; p.setAttribute('role', 'button');
+    p.setAttribute('aria-label', 'Inspect ' + (f.querySelector('figcaption b')?.textContent || 'screen'));
+    p.addEventListener('click', () => open(n, p));
+    p.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(n, p); } });
+  });
+  $('lb-prev').addEventListener('click', () => show(i - 1));
+  $('lb-next').addEventListener('click', () => show(i + 1));
+  $('lb-close').addEventListener('click', close);
+  lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
+  lb.addEventListener('close', () => opener && opener.focus());
+  document.addEventListener('keydown', (e) => {
+    if (!lb.open) return;
+    if (e.key === 'ArrowLeft') { e.preventDefault(); show(i - 1); }
+    else if (e.key === 'ArrowRight') { e.preventDefault(); show(i + 1); }
+    else if (e.key === 'Escape') { close(); }
+  });
+  let x0 = null;
+  lb.addEventListener('touchstart', (e) => { x0 = e.touches[0].clientX; }, { passive: true });
+  lb.addEventListener('touchend', (e) => {
+    if (x0 === null) return;
+    const dx = e.changedTouches[0].clientX - x0; x0 = null;
+    if (Math.abs(dx) > 50) show(i + (dx < 0 ? 1 : -1));
+  });
+})();
+</script>
 
 <footer class="wrap">Demo build, 26 November 2026. Children, schools and scores are sample data.</footer>
 
