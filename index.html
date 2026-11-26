@@ -262,9 +262,17 @@ main > .stage:first-child { border-top: 0; margin-top: 0; padding-top: 80px; }
 .lb-close:hover { border-color: var(--red); color: var(--red); }
 .lb-close:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
 @media (max-width: 620px) {
-  .lb-arrow { width: 40px; height: 40px; font-size: 18px; }
-  .lb-zone { padding: 0 8px; }
+  .lb-arrow { display: none; }
+  .lb-zone { padding: 0; }
+  .lb-top { top: calc(12px + env(safe-area-inset-top, 0px)); display: flex; align-items: center; gap: 10px; }
   .lb-hint .keys { display: none; }
+  .lb-hint { font-size: 12px; }
+  .lb-close { top: calc(12px + env(safe-area-inset-top, 0px)); height: 34px; padding: 0 12px 0 10px; font-size: 13px; }
+  .lb-count { height: 34px; }
+  .lb-stage { padding-top: calc(58px + env(safe-area-inset-top, 0px)); padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px)); align-content: start; }
+  .lb-stage .phone { width: min(86vw, calc((100dvh - 128px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)) * .44)); }
+  .lb-cap { font-size: 12.5px; padding-inline: 8px; }
+  .lb-cap b { font-size: 13.5px; }
   .stage { padding-block: 72px 8px; }
   figure { flex-basis: 210px; }
 }
@@ -428,7 +436,7 @@ main > .stage:first-child { border-top: 0; margin-top: 0; padding-top: 80px; }
     <div class="phone"><div class="glass"><div class="sb" aria-hidden="true"><span class="sb-time">9:41</span><i class="island"></i><span class="sb-sys"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg viewBox="0 0 16 12"><path d="M8 11.5 5.6 9a3.4 3.4 0 0 1 4.8 0z"/><path d="M3.2 6.6a6.8 6.8 0 0 1 9.6 0l-1.4 1.4a4.8 4.8 0 0 0-6.8 0z"/><path d="M.8 4.2a10.2 10.2 0 0 1 14.4 0l-1.4 1.4a8.2 8.2 0 0 0-11.6 0z"/></svg><svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3.2" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="24.6" y="4" width="2" height="4" rx="1" opacity=".45"/></svg></span></div><img id="lb-img" src="" alt=""></div></div>
     <div class="lb-cap"><span class="step" id="lb-step"></span><b id="lb-title"></b><span class="why" id="lb-why"></span></div>
   </div>
-  <div class="lb-top"><span class="lb-count" id="lb-count"></span><span class="lb-hint">Tap left or right side to move<span class="keys"> · <kbd>←</kbd> <kbd>→</kbd></span></span></div>
+  <div class="lb-top"><span class="lb-count" id="lb-count"></span><span class="lb-hint">Tap a side to move<span class="keys"> · <kbd>←</kbd> <kbd>→</kbd></span></span></div>
   <button class="lb-close" id="lb-close" type="button"><span aria-hidden="true">✕</span>Close</button>
 </dialog>
 <script>
