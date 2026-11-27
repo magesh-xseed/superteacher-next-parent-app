@@ -309,6 +309,13 @@ main > .stage:first-child { border-top: 0; margin-top: 0; padding-top: 80px; }
   .lb[open] .lb-stage .phone { animation: lbIn .22s ease-out; }
   @keyframes lbIn { from { transform: scale(.97); opacity: .4; } to { transform: none; opacity: 1; } }
 }
+
+/* Tab jumps: land the section heading just below the sticky tab bar (~67px + 28px). */
+.stage { scroll-margin-top: calc(95px - 112px); }
+main > .stage:first-child { scroll-margin-top: calc(95px - 80px); }
+@media (max-width: 620px) {
+  .stage, main > .stage:first-child { scroll-margin-top: calc(87px - 72px); }
+}
 </style>
 
 <section class="hero">
