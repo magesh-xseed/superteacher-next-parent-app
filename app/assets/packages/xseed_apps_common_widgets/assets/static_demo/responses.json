@@ -1,0 +1,712 @@
+{
+  "getCountries": [
+    {
+      "id": 1,
+      "name": "India",
+      "code": "IN",
+      "phoneCode": "+91",
+      "hasSmsService": true,
+      "status": "Active",
+      "regions": [
+        {
+          "id": 1,
+          "name": "Karnataka"
+        },
+        {
+          "id": 2,
+          "name": "Tamil Nadu"
+        }
+      ]
+    }
+  ],
+  "getSmsSupportCountries": [
+    {
+      "id": 1,
+      "name": "India",
+      "code": "IN",
+      "phoneCode": "+91",
+      "hasSmsService": true,
+      "status": "Active",
+      "regions": [
+        {
+          "id": 1,
+          "name": "Karnataka"
+        },
+        {
+          "id": 2,
+          "name": "Tamil Nadu"
+        }
+      ]
+    }
+  ],
+  "getApplications": [
+    {
+      "id": 1
+    }
+  ],
+  "getYears": [
+    {
+      "id": 18,
+      "name": "2026-27"
+    }
+  ],
+  "getBoards": [
+    {
+      "id": 1,
+      "code": "CBSE"
+    }
+  ],
+  "getProducts": [
+    {
+      "id": 1,
+      "code": "XSEED"
+    }
+  ],
+  "getRoles": [
+    {
+      "id": 8,
+      "acronym": "XSP"
+    }
+  ],
+  "getGrades": [
+    {
+      "id": 1,
+      "name": "Grade 1",
+      "code": "1",
+      "order": 1
+    },
+    {
+      "id": 2,
+      "name": "Grade 2",
+      "code": "2",
+      "order": 2
+    },
+    {
+      "id": 3,
+      "name": "Grade 3",
+      "code": "3",
+      "order": 3
+    },
+    {
+      "id": 4,
+      "name": "Grade 4",
+      "code": "4",
+      "order": 4
+    },
+    {
+      "id": 5,
+      "name": "Grade 5",
+      "code": "5",
+      "order": 5
+    },
+    {
+      "id": 6,
+      "name": "Grade 6",
+      "code": "6",
+      "order": 6
+    },
+    {
+      "id": 7,
+      "name": "Grade 7",
+      "code": "7",
+      "order": 7
+    },
+    {
+      "id": 8,
+      "name": "Grade 8",
+      "code": "8",
+      "order": 8
+    }
+  ],
+  "getSubjects": [
+    {
+      "id": 1,
+      "name": "English",
+      "code": "ENGLISH"
+    },
+    {
+      "id": 2,
+      "name": "Mathematics",
+      "code": "MATHEMATICS"
+    },
+    {
+      "id": 3,
+      "name": "Science",
+      "code": "SCIENCE"
+    }
+  ],
+  "getSections": [
+    {
+      "id": 1,
+      "code": "A"
+    },
+    {
+      "id": 2,
+      "code": "B"
+    }
+  ],
+  "readCurrentUserAccount": {
+    "appStatus": "AAP-INF-003",
+    "message": "Success",
+    "data": {
+      "schools": [
+        {
+          "inSchoolId": "101",
+          "roles": [
+            {
+              "roleId": 8,
+              "applicationId": 1,
+              "canCreatePost": false
+            }
+          ],
+          "students": [
+            {
+              "id": 201,
+              "name": "Anaya Rao",
+              "gender": "Female",
+              "dateOfBirth": "2017-06-15",
+              "gradeSectionId": 301,
+              "xseedStudentId": "XS201"
+            },
+            {
+              "id": 202,
+              "name": "Vihaan Rao",
+              "gender": "Male",
+              "dateOfBirth": "2015-09-10",
+              "gradeSectionId": 302,
+              "xseedStudentId": "XS202"
+            }
+          ],
+          "productAllotment": []
+        }
+      ],
+      "sectionAllotments": [],
+      "details": {
+        "id": 100,
+        "firebaseId": "offline-parent",
+        "countryCode": "+91",
+        "phone": "9876543210",
+        "email": "parent@example.com",
+        "isNewUser": false,
+        "isSuperTeacher": false,
+        "isTermsAccepted": true,
+        "isWhatsappAccepted": false
+      },
+      "profile": {
+        "userId": 100,
+        "fullName": "Meera Rao",
+        "designation": "Parent",
+        "gender": "Female",
+        "dateOfBirth": "1988-06-15",
+        "address": "Indiranagar, Bengaluru",
+        "country": 1,
+        "state": 1,
+        "pinCode": "560038"
+      }
+    }
+  },
+  "getSchool": {
+    "appStatus": "AAP-INF-003",
+    "message": "Success",
+    "data": {
+      "inSchoolId": 101,
+      "xseedSchoolId": "XSEED101",
+      "totalLicenses": 120,
+      "totalStudents": 110,
+      "usedLicenses": 110,
+      "studentsEligibleForLearnometer": 100,
+      "profile": {
+        "id": 101,
+        "inSchoolId": 101,
+        "name": "Greenwood Public School",
+        "logo": ""
+      },
+      "gradeSectionMap": [
+        {
+          "gradeId": 3,
+          "sectionId": 1,
+          "gradeSectionMapId": 301,
+          "yearId": 18,
+          "isSubscribed": true
+        },
+        {
+          "gradeId": 5,
+          "sectionId": 2,
+          "gradeSectionMapId": 302,
+          "yearId": 18,
+          "isSubscribed": true
+        }
+      ],
+      "partialDeletedGradeSectionMap": [],
+      "unSubscribedGradeSectionMap": [],
+      "otherSubjects": [],
+      "productMap": []
+    }
+  },
+  "generateOtpForMobile": {
+    "appStatus": "OTP_INFO_001",
+    "message": "Success",
+    "data": {
+      "resendTimeInSeconds": 30
+    }
+  },
+  "generateOtpForEmail": {
+    "appStatus": "OTP_INFO_001",
+    "message": "Success",
+    "data": {
+      "resendTimeInSeconds": 30
+    }
+  },
+  "loginUser": {
+    "appStatus": "USR-INF-004",
+    "message": "Success",
+    "data": null,
+    "customToken": "offline-parent"
+  },
+  "createUser": {
+    "appStatus": "AAP-INF-001",
+    "message": "Success",
+    "data": null,
+    "customToken": "offline-parent"
+  },
+  "createUserSchoolAppRoleMap": {
+    "appStatus": "AAP-INF-002",
+    "message": "Success",
+    "data": null,
+    "customToken": "offline-parent"
+  },
+  "getFeed": {
+    "appStatus": "NFS_INF_007",
+    "message": "Success",
+    "data": [
+      {
+        "id": 1,
+        "text": "Our Grade 3 learners compared fractions using paper strips today. Ask your child to show you two different ways to make one half.",
+        "feedType": "POST",
+        "likeCount": 7,
+        "commentCount": 1,
+        "isFeedLikedByUser": false,
+        "createdAt": "2026-11-17T08:15:00.000Z",
+        "feedCursor": 1,
+        "audienceCursor": 1,
+        "canEdit": false,
+        "creator": {
+          "name": "Asha Menon"
+        },
+        "attachments": []
+      },
+      {
+        "id": 2,
+        "text": "Science exhibition: Families are invited to visit the school hall on Friday from 10:00 a.m. to noon.",
+        "feedType": "POST",
+        "likeCount": 12,
+        "commentCount": 0,
+        "isFeedLikedByUser": false,
+        "createdAt": "2026-11-17T08:15:00.000Z",
+        "feedCursor": 2,
+        "audienceCursor": 2,
+        "canEdit": false,
+        "creator": {
+          "name": "Greenwood Public School"
+        },
+        "attachments": []
+      },
+      {
+        "id": 3,
+        "text": "Library books are due on Thursday. Please help your child pack theirs before school.",
+        "feedType": "POST",
+        "likeCount": 4,
+        "commentCount": 0,
+        "isFeedLikedByUser": false,
+        "createdAt": "2026-11-17T08:15:00.000Z",
+        "feedCursor": 3,
+        "audienceCursor": 3,
+        "canEdit": false,
+        "creator": {
+          "name": "Library Team"
+        },
+        "attachments": []
+      }
+    ]
+  },
+  "getPictureOfTheDay": {
+    "appStatus": "NFS-INF-001",
+    "message": "Success",
+    "data": [
+      {
+        "feedId": 11,
+        "thumbnailUrl": "assets/static_demo/anaya-worksheet.jpeg",
+        "imageUrl": "assets/static_demo/anaya-worksheet.jpeg",
+        "isFeedViewedByUser": false,
+        "gradeSectionId": "301",
+        "canDelete": false,
+        "createdAt": "2026-11-17T08:15:00.000Z"
+      }
+    ]
+  },
+  "getComments": {
+    "appStatus": "NFS-INF-004",
+    "message": "Success",
+    "data": {
+      "comments": [
+        {
+          "commentText": "Anaya showed us the fraction strips at dinner!",
+          "userName": "Rohan Iyer"
+        }
+      ],
+      "commentCount": 1
+    }
+  },
+  "getListOfHomework": {
+    "appStatus": "HW-INF-003",
+    "message": "Success",
+    "data": [
+      {
+        "_id": "hw-1",
+        "name": "Fractions at home",
+        "homeWorkName": "Fractions at home",
+        "createdAt": "2026-11-17T08:15:00.000Z",
+        "blockId": 1,
+        "blockMapId": "demo-block-1",
+        "likesCount": 0,
+        "commentsCount": 0,
+        "status": "PUBLISHED",
+        "completionStatus": "PENDING",
+        "instructions": "Draw a rectangle and show three ways to divide it into equal parts. Label the fractions.",
+        "questionText": "Draw a rectangle and show three ways to divide it into equal parts. Label the fractions.",
+        "gradeSectionIds": [
+          301
+        ],
+        "sections": [
+          301
+        ],
+        "grade": [
+          {
+            "id": "3",
+            "name": "Grade 3",
+            "code": "3",
+            "order": 3
+          }
+        ],
+        "subject": [
+          {
+            "id": 2,
+            "name": "Mathematics",
+            "code": "MATHEMATICS"
+          }
+        ],
+        "attachments": [
+          {
+            "attachmentUrl": "assets/static_demo/anaya-worksheet.jpeg",
+            "attachmentType": "IMAGE",
+            "asset": {
+              "url": "assets/static_demo/anaya-worksheet.jpeg",
+              "original": "assets/static_demo/anaya-worksheet.jpeg",
+              "type": "image",
+              "assetType": "IMAGE",
+              "mimeType": "image/png",
+              "assetId": "worksheet-1"
+            }
+          }
+        ],
+        "lessonPlans": [],
+        "lpDetails": [],
+        "questions": [],
+        "blockDetails": [],
+        "coverImageAsset": {
+          "type": "image",
+          "url": "assets/static_demo/anaya-worksheet.jpeg"
+        },
+        "lpSequenceString": "Lesson 1"
+      },
+      {
+        "_id": "hw-2",
+        "name": "Reading for detail",
+        "homeWorkName": "Reading for detail",
+        "createdAt": "2026-11-17T08:15:00.000Z",
+        "blockId": 2,
+        "blockMapId": "demo-block-2",
+        "likesCount": 0,
+        "commentsCount": 0,
+        "status": "PUBLISHED",
+        "completionStatus": "PENDING",
+        "instructions": "Read one page from your library book and write three details you learned.",
+        "questionText": "Read one page from your library book and write three details you learned.",
+        "gradeSectionIds": [
+          301
+        ],
+        "sections": [
+          301
+        ],
+        "grade": [
+          {
+            "id": "3",
+            "name": "Grade 3",
+            "code": "3",
+            "order": 3
+          }
+        ],
+        "subject": [
+          {
+            "id": 1,
+            "name": "English",
+            "code": "ENGLISH"
+          }
+        ],
+        "attachments": [],
+        "lessonPlans": [],
+        "lpDetails": [],
+        "questions": [],
+        "blockDetails": [],
+        "coverImageAsset": {
+          "type": "image",
+          "url": "assets/static_demo/anaya-worksheet.jpeg"
+        },
+        "lpSequenceString": "Lesson 2"
+      },
+      {
+        "_id": "hw-3",
+        "name": "Changes of state",
+        "homeWorkName": "Changes of state",
+        "createdAt": "2026-11-17T08:15:00.000Z",
+        "blockId": 3,
+        "blockMapId": "demo-block-3",
+        "likesCount": 0,
+        "commentsCount": 0,
+        "status": "PUBLISHED",
+        "completionStatus": "PENDING",
+        "instructions": "Observe an ice cube as it melts. Record what you see every five minutes.",
+        "questionText": "Observe an ice cube as it melts. Record what you see every five minutes.",
+        "gradeSectionIds": [
+          302
+        ],
+        "sections": [
+          302
+        ],
+        "grade": [
+          {
+            "id": "5",
+            "name": "Grade 5",
+            "code": "5",
+            "order": 5
+          }
+        ],
+        "subject": [
+          {
+            "id": 3,
+            "name": "Science",
+            "code": "SCIENCE"
+          }
+        ],
+        "attachments": [
+          {
+            "attachmentUrl": "assets/static_demo/vihaan-worksheet.jpeg",
+            "attachmentType": "IMAGE",
+            "asset": {
+              "url": "assets/static_demo/vihaan-worksheet.jpeg",
+              "original": "assets/static_demo/vihaan-worksheet.jpeg",
+              "type": "image",
+              "assetType": "IMAGE",
+              "mimeType": "image/png",
+              "assetId": "worksheet-3"
+            }
+          }
+        ],
+        "lessonPlans": [],
+        "lpDetails": [],
+        "questions": [],
+        "blockDetails": [],
+        "coverImageAsset": {
+          "type": "image",
+          "url": "assets/static_demo/vihaan-worksheet.jpeg"
+        },
+        "lpSequenceString": "Lesson 3"
+      },
+      {
+        "_id": "hw-4",
+        "name": "Decimal place value",
+        "homeWorkName": "Decimal place value",
+        "createdAt": "2026-11-17T08:15:00.000Z",
+        "blockId": 4,
+        "blockMapId": "demo-block-4",
+        "likesCount": 0,
+        "commentsCount": 0,
+        "status": "PUBLISHED",
+        "completionStatus": "PENDING",
+        "instructions": "Write five amounts you see at home and circle the digit in the tenths place.",
+        "questionText": "Write five amounts you see at home and circle the digit in the tenths place.",
+        "gradeSectionIds": [
+          302
+        ],
+        "sections": [
+          302
+        ],
+        "grade": [
+          {
+            "id": "5",
+            "name": "Grade 5",
+            "code": "5",
+            "order": 5
+          }
+        ],
+        "subject": [
+          {
+            "id": 2,
+            "name": "Mathematics",
+            "code": "MATHEMATICS"
+          }
+        ],
+        "attachments": [],
+        "lessonPlans": [],
+        "lpDetails": [],
+        "questions": [],
+        "blockDetails": [],
+        "coverImageAsset": {
+          "type": "image",
+          "url": "assets/static_demo/vihaan-worksheet.jpeg"
+        },
+        "lpSequenceString": "Lesson 4"
+      }
+    ]
+  },
+  "getResultsForStudents": {
+    "appStatus": "RES_INF_007",
+    "message": "Success",
+    "data": [
+      {
+        "studentId": 201,
+        "schoolPerformance": {
+          "summary": "Midterm assessment",
+          "data": [
+            {
+              "subjectId": 1,
+              "marks": 88,
+              "maxMarks": 100
+            },
+            {
+              "subjectId": 2,
+              "marks": 92,
+              "maxMarks": 100
+            },
+            {
+              "subjectId": 3,
+              "marks": 85,
+              "maxMarks": 100
+            }
+          ]
+        },
+        "workSamples": [
+          {
+            "assetUrl": "assets/static_demo/anaya-worksheet.jpeg",
+            "assetType": "image",
+            "name": "Classwork sample"
+          }
+        ],
+        "certificates": [],
+        "reportCards": [
+          {
+            "assetUrl": "assets/static_demo/anaya-report.pdf",
+            "assetType": "pdf",
+            "name": "Midterm report card"
+          }
+        ],
+        "xseedResults": {
+          "reportUrl": "assets/static_demo/anaya-report.pdf",
+          "totalScore": 88,
+          "yearName": "2026-27",
+          "subjectWisePercentage": {
+            "english": 88,
+            "mathematics": 92,
+            "science": 85
+          }
+        },
+        "remarks": [
+          {
+            "commentId": 400,
+            "commentText": "Explains her mathematical thinking clearly.",
+            "userRole": "Teacher",
+            "creatorId": 77,
+            "createdAt": "2026-11-17T08:15:00.000Z",
+            "replies": []
+          }
+        ]
+      },
+      {
+        "studentId": 202,
+        "schoolPerformance": {
+          "summary": "Midterm assessment",
+          "data": [
+            {
+              "subjectId": 1,
+              "marks": 90,
+              "maxMarks": 100
+            },
+            {
+              "subjectId": 2,
+              "marks": 84,
+              "maxMarks": 100
+            },
+            {
+              "subjectId": 3,
+              "marks": 93,
+              "maxMarks": 100
+            }
+          ]
+        },
+        "workSamples": [
+          {
+            "assetUrl": "assets/static_demo/vihaan-worksheet.jpeg",
+            "assetType": "image",
+            "name": "Classwork sample"
+          }
+        ],
+        "certificates": [],
+        "reportCards": [
+          {
+            "assetUrl": "assets/static_demo/vihaan-report.pdf",
+            "assetType": "pdf",
+            "name": "Midterm report card"
+          }
+        ],
+        "xseedResults": {
+          "reportUrl": "assets/static_demo/vihaan-report.pdf",
+          "totalScore": 89,
+          "yearName": "2026-27",
+          "subjectWisePercentage": {
+            "english": 90,
+            "mathematics": 84,
+            "science": 93
+          }
+        },
+        "remarks": [
+          {
+            "commentId": 401,
+            "commentText": "Made careful observations during our science activity.",
+            "userRole": "Teacher",
+            "creatorId": 77,
+            "createdAt": "2026-11-17T08:15:00.000Z",
+            "replies": []
+          }
+        ]
+      }
+    ]
+  },
+  "getLearnometerSchoolAssessmentSettingsV2": [],
+  "getSchoolExamsBySchoolId": {
+    "appStatus": "RES_INF_007",
+    "message": "Success",
+    "data": [
+      {
+        "id": 1,
+        "name": "Midterm"
+      }
+    ]
+  },
+  "getReportsBySchoolId": {
+    "appStatus": "RES_INF_007",
+    "message": "Success",
+    "data": null,
+    "reportUrl": ""
+  },
+  "getLearnometerReportMetaData": {}
+}

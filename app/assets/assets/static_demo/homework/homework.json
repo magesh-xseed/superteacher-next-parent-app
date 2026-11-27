@@ -1,0 +1,280 @@
+{
+  "children": [
+    {
+      "id": "aarav",
+      "assignments": [
+        {
+          "id": "fractions",
+          "thumbnail": "fractions_thumbnail.png",
+          "subject": "Mathematics",
+          "title": "Fractions on a number line",
+          "due": 0,
+          "description": "Practise placing and comparing fractions on a number line. Use the worksheet or work in your maths notebook.",
+          "worksheet": "fraction-skills-worksheet.png",
+          "instructions": [
+            "Draw a number line from 0 to 1. Divide it into four equal intervals and mark each quarter.",
+            "Label 1/4 and 3/4. Write one sentence to explain how the number line shows which fraction is greater.",
+            "Draw a second number line divided into halves. Compare the two drawings and explain why 2/4 and 1/2 mark the same point. Bring your work to the next maths lesson."
+          ],
+          "teacher": "Ms. Priya Menon",
+          "askChild": "Is 2/4 bigger, smaller or the same as 1/2? How can a number line prove it?",
+          "attachments": [
+            {
+              "asset": "fraction-practice.pdf",
+              "name": "Fractions on a number line.pdf",
+              "type": "PDF",
+              "bytes": 883
+            },
+            {
+              "asset": "fraction-example.png",
+              "name": "Worked example – marking quarters on a number line.png",
+              "type": "Image",
+              "bytes": 21435,
+              "downloadFailsOnce": true
+            }
+          ],
+          "blockTitle": "Block 2 · Fractions",
+          "lessonNumber": 1,
+          "clarifications": [
+            {
+              "title": "Worksheet clarification",
+              "text": "You can complete the homework in your notebook. Printing is not required.",
+              "minutesAgo": 90,
+              "unread": true
+            }
+          ]
+        },
+        {
+          "id": "reading",
+          "thumbnail": "alphabet_thumbnail.png",
+          "subject": "English",
+          "title": "Read chapter 4 and write a short summary",
+          "due": 1,
+          "description": "Read chapter 4 of your class reader and retell the main events in your own words.",
+          "instructions": [
+            "Read at your own pace. Pause after each scene and say what happened in one sentence.",
+            "Write four or five sentences in your English notebook. Include the main character, the problem, and what changed."
+          ],
+          "teacher": "Ms. Nisha Thomas",
+          "askChild": "What problem did the main character face in chapter 4, and what would you have done?",
+          "attachments": [
+            {
+              "asset": "reading-extension.pdf",
+              "name": "Chapter 4 – reading response prompts.pdf",
+              "type": "PDF",
+              "bytes": 779,
+              "afterRefresh": true
+            }
+          ],
+          "blockTitle": "Block 1 · Reading and Writing",
+          "lessonNumber": 1
+        },
+        {
+          "id": "seeds",
+          "thumbnail": "plant_thumbnail.png",
+          "subject": "Science",
+          "title": "Observe how a seed germinates",
+          "due": 4,
+          "description": "Set up a simple observation using two beans and a damp paper towel.",
+          "instructions": [
+            "Place the beans on a damp paper towel and keep them near a window.",
+            "Check the beans once a day. Record any changes to the seed coat and root. Use the observation notes or make your own table."
+          ],
+          "teacher": "Mr. Rahul Shah",
+          "askChild": "What does a seed need to start growing? Which one do you think matters most?",
+          "attachments": [
+            {
+              "asset": "observation-notes.txt",
+              "name": "Seed germination observation notes.txt",
+              "type": "Text",
+              "bytes": 163
+            },
+            {
+              "asset": "missing-reference.pdf",
+              "name": "Seedling reference sheet.pdf",
+              "type": "PDF",
+              "bytes": null,
+              "unavailable": true
+            },
+            {
+              "asset": "preview-error.pdf",
+              "name": "Optional reading journal.pdf",
+              "type": "PDF",
+              "bytes": 779,
+              "previewFails": true,
+              "source": "reading-extension.pdf"
+            }
+          ],
+          "blockTitle": "Block 3 · Plant Life",
+          "lessonNumber": 1,
+          "submissionFailsOnce": true
+        },
+        {
+          "id": "map",
+          "thumbnail": "neighbourhood_thumbnail.png",
+          "subject": "Social Studies",
+          "title": "Sketch a map of your neighbourhood",
+          "due": -2,
+          "description": "Make a simple map showing landmarks near your home.",
+          "instructions": [
+            "Add three landmarks and a key. Use arrows to show the route from your home to one landmark."
+          ],
+          "teacher": "Ms. Diya Rao",
+          "askChild": "If a friend visited, which route would you draw from our home to your school?",
+          "blockTitle": "Block 1 · Our Neighbourhood",
+          "lessonNumber": 1
+        },
+        {
+          "id": "words",
+          "thumbnail": "alphabet_thumbnail.png",
+          "subject": "English",
+          "title": "Sort words by their prefixes",
+          "lessonNumber": 1,
+          "due": -5,
+          "description": "Group the words from class by their prefixes. Explain how each prefix changes the meaning.",
+          "instructions": [
+            "Make columns for re-, un-, and pre-. Add at least three words to each column."
+          ],
+          "completed": true,
+          "completedDayOffset": -5,
+          "blockTitle": "Block 2 · Word Study",
+          "teacher": "Ms. Nisha Thomas"
+        },
+        {
+          "id": "patterns",
+          "thumbnail": "fractions_thumbnail.png",
+          "subject": "Mathematics",
+          "title": "Continue and explain number patterns",
+          "lessonNumber": 1,
+          "due": -7,
+          "description": "Find the rule for each number sequence from class.",
+          "instructions": [
+            "Write the next three numbers. Describe each rule in a sentence."
+          ],
+          "completed": true,
+          "completedDayOffset": -7,
+          "blockTitle": "Block 1 · Number Patterns",
+          "teacher": "Ms. Priya Menon"
+        },
+        {
+          "id": "journal",
+          "thumbnail": "recycling_thumbnail.png",
+          "subject": "EVS",
+          "title": "Write about one way your family can reuse materials at home",
+          "due": 5,
+          "description": "Choose an everyday item and describe a practical way to use it again.",
+          "instructions": [
+            "Explain what the item was originally used for, how you repurposed it, and who could use it next."
+          ],
+          "teacher": "Mr. Rahul Shah",
+          "askChild": "Which thing at home do we throw away that we could reuse instead?",
+          "blockTitle": "Block 2 · Our Surroundings",
+          "lessonNumber": 1
+        }
+      ]
+    },
+    {
+      "id": "anaya",
+      "assignments": [
+        {
+          "id": "shapes",
+          "thumbnail": "fractions_thumbnail.png",
+          "subject": "Mathematics",
+          "title": "Find 2D shapes at home",
+          "lessonNumber": 1,
+          "due": 1,
+          "description": "Look for circles, rectangles, and triangles around your home.",
+          "instructions": [
+            "Draw one example of each shape and label where you found it."
+          ],
+          "blockTitle": "Block 1 · Shapes",
+          "teacher": "Ms. Kavya Sen",
+          "askChild": "How many shapes can you spot at the dinner table? Which one has the most corners?"
+        },
+        {
+          "id": "fractions",
+          "thumbnail": "fractions_thumbnail.png",
+          "subject": "Mathematics",
+          "title": "Fractions on a number line",
+          "due": 0,
+          "description": "Practise placing and comparing fractions on a number line. Use the worksheet or work in your maths notebook.",
+          "worksheet": "fraction-skills-worksheet.png",
+          "instructions": [
+            "Draw a number line from 0 to 1. Divide it into four equal intervals and mark each quarter.",
+            "Label 1/4 and 3/4. Write one sentence to explain how the number line shows which fraction is greater.",
+            "Draw a second number line divided into halves. Compare the two drawings and explain why 2/4 and 1/2 mark the same point. Bring your work to the next maths lesson."
+          ],
+          "teacher": "Ms. Priya Menon",
+          "askChild": "If we cut a roti into four equal parts and eat two, what fraction is left?",
+          "attachments": [
+            {
+              "asset": "fraction-practice.pdf",
+              "name": "Fractions on a number line.pdf",
+              "type": "PDF",
+              "bytes": 883
+            },
+            {
+              "asset": "fraction-example.png",
+              "name": "Worked example – marking quarters on a number line.png",
+              "type": "Image",
+              "bytes": 21435,
+              "downloadFailsOnce": true
+            }
+          ],
+          "blockTitle": "Block 2 · Fractions",
+          "lessonNumber": 1,
+          "helpDifficulty": "instructions"
+        }
+      ]
+    },
+    {
+      "id": "vihaan",
+      "assignments": []
+    },
+    {
+      "id": "meera",
+      "assignments": [
+        {
+          "id": "poem",
+          "thumbnail": "alphabet_thumbnail.png",
+          "subject": "English",
+          "title": "Read and reflect on a poem",
+          "lessonNumber": 1,
+          "due": -1,
+          "description": "Read the poem from class aloud and explain which image stood out to you.",
+          "instructions": [
+            "Copy one line into your notebook and explain what it made you picture."
+          ],
+          "completed": true,
+          "completedDayOffset": -1,
+          "blockTitle": "Block 1 · Poetry",
+          "teacher": "Ms. Riya Das",
+          "askChild": "Which line of the poem would you read aloud to me, and why?"
+        }
+      ]
+    }
+  ],
+  "notifications": [
+    {
+      "id": "clarification",
+      "child": "aarav",
+      "assignment": "fractions",
+      "kind": "clarification",
+      "minutesAgo": 90
+    },
+    {
+      "id": "new",
+      "child": "anaya",
+      "assignment": "shapes",
+      "kind": "new",
+      "minutesAgo": 180
+    },
+    {
+      "id": "update",
+      "child": "aarav",
+      "assignment": "reading",
+      "kind": "update",
+      "minutesAgo": 240
+    }
+  ]
+}

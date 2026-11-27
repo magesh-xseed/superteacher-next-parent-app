@@ -1,0 +1,512 @@
+{
+  "children": [
+    {
+      "id": "aarav",
+      "name": "Aarav Sharma",
+      "gender": "male",
+      "school": "Cedar Grove Academy",
+      "grade": 5,
+      "subscription": "active",
+      "assessments": [
+        {
+          "id": "nov-26",
+          "status": "available",
+          "date": "2026-11-05",
+          "report": {
+            "grade": 5,
+            "scale": "lmo-grade5-v1",
+            "overall": 79,
+            "subjects": {
+              "English": 93,
+              "Mathematics": 72,
+              "Science": 73
+            },
+            "skills": {
+              "Understanding": 84,
+              "Problem solving": 75,
+              "Communicating": 77
+            },
+            "competencies": {
+              "English": {
+                "Reading comprehension": 95,
+                "Vocabulary": 89,
+                "Grammar": 65,
+                "Writing": 87
+              },
+              "Mathematics": {
+                "Data handling": 57,
+                "Geometry": 70,
+                "Measurement": 71,
+                "Number parts": 82,
+                "Numbers and operations": 80
+              },
+              "Science": {
+                "Our environment": 70,
+                "Plants": 59,
+                "Force and energy": 68,
+                "Matter and its interactions": 84
+              }
+            },
+            "strengths": [
+              "Infers meaning in grade-level texts and supports answers with details.",
+              "Solves fraction subtraction and explains the steps clearly."
+            ],
+            "focus": [
+              {
+                "topic": "Mathematics · Data handling",
+                "observation": "Reads bar graphs well, but sometimes misses the chart key in pictographs.",
+                "recommendation": "Practise pictograph questions where one symbol represents two or five items.",
+                "activity": {
+                  "title": "Make a fruit pictograph",
+                  "priority": true,
+                  "goal": "Understand how a chart key represents quantities.",
+                  "materials": "Fruits or drawings, paper and pencil.",
+                  "checklist": [
+                    "Count three kinds of fruit at home.",
+                    "Draw one symbol for every two fruits.",
+                    "Ask your child to explain what half a symbol means.",
+                    "Compare which fruit has the highest and lowest count."
+                  ],
+                  "tip": "Ask your child to read the chart key before answering.",
+                  "chartKeyGuide": {
+                    "key": "1 Circle = 2 Fruits · Half = 1",
+                    "rows": [
+                      {
+                        "label": "Apples",
+                        "quantity": 6
+                      },
+                      {
+                        "label": "Bananas",
+                        "quantity": 5
+                      },
+                      {
+                        "label": "Oranges",
+                        "quantity": 4
+                      }
+                    ],
+                    "itemsPerSymbol": 2,
+                    "instructions": "Have Aarav count by 2s for every full circle and add 1 for a half circle before answering comparison questions."
+                  },
+                  "steps": "Count three kinds of fruit at home. Draw one symbol for every two pieces of fruit and explain what a half symbol means.",
+                  "minutes": 15
+                }
+              },
+              {
+                "topic": "English · Grammar",
+                "observation": "Uses adjectives well, but occasionally confuses adjectives with adverbs.",
+                "recommendation": "Practise identifying words that describe actions in short sentences.",
+                "activity": {
+                  "title": "Read and retell",
+                  "topic": "English · Reading and language",
+                  "goal": "Improve comprehension and clear expression.",
+                  "materials": "A short age-appropriate passage or story.",
+                  "checklist": [
+                    "Read a short passage together.",
+                    "Ask your child to explain the main idea.",
+                    "Ask what happened first, next and last.",
+                    "Encourage your child to describe actions using appropriate adverbs."
+                  ],
+                  "tip": "Ask open-ended questions instead of immediately correcting answers.",
+                  "steps": "Read a short story together. Retell three actions using words such as quietly, carefully and quickly.",
+                  "minutes": 10
+                }
+              },
+              {
+                "topic": "Science · Plants",
+                "observation": "Understands basic seed parts, but needs more practice with seed dispersal methods.",
+                "recommendation": "Review examples of seeds dispersed by wind, water and animals.",
+                "activity": {
+                  "title": "Try a seed sorting walk",
+                  "goal": "Understand how different seeds are dispersed.",
+                  "materials": "Safe examples of seeds or pictures of seeds.",
+                  "checklist": [
+                    "Observe different kinds of seeds.",
+                    "Compare their shapes and structures.",
+                    "Group them by how they might travel.",
+                    "Discuss examples of wind, water and animal dispersal."
+                  ],
+                  "tip": "Ask your child to explain why each seed belongs in a particular group.",
+                  "steps": "Observe seeds or use pictures. Group them by how they might travel and explain the clues for each group.",
+                  "minutes": 20
+                }
+              }
+            ],
+            "activityMonth": "November 2026",
+            "activityBenchmark": {
+              "completion": "84% of Grade 5 families completed this month’s set",
+              "boost": "+12% avg boost",
+              "initials": [
+                "RK",
+                "MP",
+                "SN"
+              ]
+            },
+            "summary": {
+              "assessmentId": "LM-2026-NOV-05",
+              "attempted": "45 / 45 (100%)",
+              "duration": "38 mins",
+              "teacherFeedback": "Aarav demonstrates strong conceptual clarity across English and analytical reasoning. Focusing on pictograph chart keys and adverb usage will elevate Mathematics and Science into the Exceeding band next term."
+            },
+            "activityBadge": "November Explorer",
+            "activityHistory": {
+              "streak": "2 Mo",
+              "peerStanding": "Top 18%",
+              "peerGroup": "Grade 5 peers",
+              "months": [
+                {
+                  "month": "October 2026",
+                  "activities": [
+                    {
+                      "title": "Kitchen fraction measuring",
+                      "done": true
+                    },
+                    {
+                      "title": "Story inference detective",
+                      "done": true
+                    },
+                    {
+                      "title": "Shadow length sundial",
+                      "done": true
+                    }
+                  ]
+                },
+                {
+                  "month": "September 2026",
+                  "activities": [
+                    {
+                      "title": "Grocery receipt estimation",
+                      "done": true
+                    },
+                    {
+                      "title": "Dialogue punctuation builder",
+                      "done": true
+                    },
+                    {
+                      "title": "Water cycle jar experiment",
+                      "done": false
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "aug-26",
+          "status": "available",
+          "date": "2026-08-13",
+          "report": {
+            "grade": 5,
+            "scale": "lmo-grade5-v1",
+            "overall": 71,
+            "subjects": {
+              "English": 85,
+              "Mathematics": 65,
+              "Science": 63
+            },
+            "skills": {
+              "Understanding": 77,
+              "Problem solving": 66,
+              "Communicating": 71
+            },
+            "competencies": {
+              "English": {
+                "Reading comprehension": 85
+              },
+              "Mathematics": {
+                "Data handling": 51
+              },
+              "Science": {
+                "Plants": 52
+              }
+            },
+            "strengths": [
+              "Finds explicit information in short texts."
+            ],
+            "focus": [
+              {
+                "topic": "Mathematics · Data handling",
+                "observation": "Aarav reads simple charts accurately but sometimes counts symbols without applying the scale.",
+                "recommendation": "Practise reading a chart key before calculating totals or comparing groups.",
+                "activity": {
+                  "title": "Make a fruit pictograph",
+                  "steps": "Count three kinds of fruit at home. Draw one symbol for every two pieces of fruit and explain what a half symbol means.",
+                  "minutes": 15
+                }
+              }
+            ],
+            "activityMonth": "August 2026"
+          }
+        },
+        {
+          "id": "feb-26",
+          "status": "available",
+          "date": "2026-02-06",
+          "report": {
+            "grade": 4,
+            "scale": "lmo-grade4-v1",
+            "overall": 74,
+            "subjects": {
+              "English": 80,
+              "Mathematics": 69,
+              "Science": 73
+            },
+            "skills": {},
+            "competencies": {},
+            "strengths": [
+              "Uses diagrams to explain a solution."
+            ],
+            "focus": [],
+            "activityMonth": "November 2026"
+          }
+        }
+      ]
+    },
+    {
+      "id": "anaya",
+      "name": "Anaya Sharma",
+      "gender": "female",
+      "school": "Riverstone Public School",
+      "grade": 3,
+      "subscription": "none",
+      "assessments": []
+    },
+    {
+      "id": "vihaan",
+      "name": "Vihaan Rao",
+      "gender": "male",
+      "school": "Maplewood Learning Centre",
+      "grade": 7,
+      "subscription": "expired",
+      "assessments": []
+    },
+    {
+      "id": "meera",
+      "name": "Meera Sharma",
+      "gender": "female",
+      "school": "Willow Creek School",
+      "grade": 6,
+      "subscription": "active",
+      "assessments": [
+        {
+          "id": "meera-dec",
+          "status": "scheduled",
+          "date": "2026-12-16",
+          "time": "9:30–11:00 AM IST",
+          "subjects": [
+            "English",
+            "Mathematics",
+            "Science"
+          ]
+        },
+        {
+          "id": "meera-oct",
+          "status": "available",
+          "date": "2026-10-15",
+          "report": {
+            "grade": 6,
+            "scale": "lmo-grade6-v1",
+            "overall": 68,
+            "subjects": {
+              "English": 73,
+              "Mathematics": 78,
+              "Science": 53
+            },
+            "skills": {
+              "Understanding": 71,
+              "Problem solving": 76,
+              "Communicating": 57
+            },
+            "competencies": {
+              "Mathematics": {
+                "Ratios and proportions": 81
+              },
+              "Science": {
+                "Separating mixtures": 51
+              }
+            },
+            "strengths": [
+              "Uses equivalent ratios to compare quantities."
+            ],
+            "focus": [
+              {
+                "topic": "Science · Mixtures",
+                "observation": "Meera can identify common mixtures and is still learning how to select a method for separating them.",
+                "recommendation": "Compare the properties of materials before choosing a separation method."
+              }
+            ],
+            "activityMonth": "October 2026"
+          }
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "default",
+      "label": "Child’s default"
+    },
+    {
+      "id": "unscheduled",
+      "label": "Not scheduled",
+      "hideCurrent": true
+    },
+    {
+      "id": "scheduled",
+      "label": "Scheduled",
+      "assessment": {
+        "id": "dec-26",
+        "status": "scheduled",
+        "date": "2026-12-10T04:30:00Z",
+        "time": "10:00–11:30 AM IST",
+        "subjects": [
+          "English",
+          "Mathematics",
+          "Science"
+        ]
+      }
+    },
+    {
+      "id": "rescheduled",
+      "label": "Rescheduled",
+      "assessment": {
+        "id": "dec-26",
+        "status": "rescheduled",
+        "date": "2026-12-14T04:30:00Z",
+        "previousDate": "2026-12-10",
+        "time": "10:00–11:30 AM IST",
+        "note": "The school moved the assessment to accommodate a school event."
+      }
+    },
+    {
+      "id": "canceled",
+      "label": "Canceled",
+      "assessment": {
+        "id": "dec-26",
+        "status": "canceled",
+        "date": "2026-12-10",
+        "note": "The school canceled this sitting. Contact the school for the next opportunity."
+      }
+    },
+    {
+      "id": "inProgress",
+      "label": "Assessment in progress",
+      "assessment": {
+        "id": "nov-live",
+        "status": "inProgress",
+        "date": "2026-11-20"
+      }
+    },
+    {
+      "id": "missed",
+      "label": "Missed assessment",
+      "assessment": {
+        "id": "nov-missed",
+        "status": "missed",
+        "date": "2026-11-18"
+      }
+    },
+    {
+      "id": "completed",
+      "label": "Completed",
+      "assessment": {
+        "id": "nov-new",
+        "status": "completed",
+        "date": "2026-11-19"
+      }
+    },
+    {
+      "id": "pending",
+      "label": "Report pending",
+      "assessment": {
+        "id": "nov-new",
+        "status": "pending",
+        "date": "2026-11-19",
+        "expected": "2026-11-22"
+      }
+    },
+    {
+      "id": "delayed",
+      "label": "Report delayed",
+      "assessment": {
+        "id": "nov-new",
+        "status": "pending",
+        "date": "2026-11-15",
+        "expected": "2026-11-18",
+        "delayed": true
+      }
+    },
+    {
+      "id": "restricted",
+      "label": "Restricted access",
+      "restricted": true
+    },
+    {
+      "id": "partial",
+      "label": "Partial report and invalid scores",
+      "assessment": {
+        "id": "nov-partial",
+        "status": "available",
+        "date": "2026-11-18",
+        "report": {
+          "grade": 5,
+          "scale": "lmo-grade5-v1",
+          "overall": 110,
+          "subjects": {
+            "English": 82,
+            "Mathematics": -4,
+            "Science": null
+          }
+        }
+      }
+    },
+    {
+      "id": "unavailable",
+      "label": "Report data missing",
+      "assessment": {
+        "id": "nov-missing",
+        "status": "available",
+        "date": "2026-11-18"
+      }
+    },
+    {
+      "id": "duplicate",
+      "label": "Duplicate assessment updates",
+      "assessment": {
+        "id": "dec-26",
+        "status": "rescheduled",
+        "date": "2026-12-14",
+        "previousDate": "2026-12-10",
+        "time": "10:00 AM IST"
+      },
+      "duplicates": [
+        {
+          "id": "dec-26",
+          "status": "scheduled",
+          "date": "2026-12-10",
+          "time": "10:00 AM IST"
+        }
+      ]
+    },
+    {
+      "id": "empty",
+      "label": "No assessments or reports",
+      "empty": true
+    },
+    {
+      "id": "offline",
+      "label": "Offline snapshot",
+      "offline": true
+    },
+    {
+      "id": "error",
+      "label": "Load error",
+      "error": true
+    },
+    {
+      "id": "loading",
+      "label": "Loading and recovery",
+      "loading": true
+    }
+  ]
+}

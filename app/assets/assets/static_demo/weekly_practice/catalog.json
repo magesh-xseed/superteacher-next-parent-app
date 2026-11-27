@@ -1,0 +1,710 @@
+{
+  "sharedLearningVideo": {
+    "kind": "video",
+    "title": "Equivalent fractions",
+    "description": "See how different fractions can represent the same part of a whole.",
+    "asset": "equivalent-fractions.mp4",
+    "thumbnail": "equivalent-fractions-thumbnail.webp",
+    "duration": "0:38"
+  },
+  "weeks": [
+    {
+      "published": true,
+      "subjects": [
+        "english",
+        "mathematics",
+        "science",
+        "social-studies"
+      ],
+      "start": "2026-11-23",
+      "number": 1
+    },
+    {
+      "published": true,
+      "subjects": [
+        "english-archive-1",
+        "science-archive-1"
+      ],
+      "start": "2026-11-16"
+    },
+    {
+      "published": true,
+      "subjects": [
+        "mathematics-archive-2",
+        "social-studies-archive-2"
+      ],
+      "start": "2026-11-09"
+    },
+    {
+      "published": true,
+      "subjects": [
+        "english-archive-3",
+        "mathematics-archive-3"
+      ],
+      "start": "2026-11-02"
+    },
+    {
+      "published": true,
+      "subjects": [
+        "science-archive-4",
+        "social-studies-archive-4"
+      ],
+      "start": "2026-10-26"
+    }
+  ],
+  "subjects": [
+    {
+      "id": "english",
+      "name": "English",
+      "blocks": [
+        {
+          "id": "reading",
+          "name": "Reading Comprehension",
+          "description": "Understand a passage, find the main idea and answer questions using details from the text.",
+          "number": 4,
+          "questions": [
+            {
+              "skill": "Main idea",
+              "passage": "Mira waters a seed each morning. She moves the pot into the sunshine and watches a tiny shoot appear.",
+              "prompt": "What is the passage mainly about?",
+              "options": [
+                "How Mira helps a seed grow",
+                "Why the sun rises",
+                "How to paint a flower pot",
+                "What Mira eats for breakfast"
+              ],
+              "correct": 0,
+              "explanation": "Each detail describes one way Mira cares for her seed or what happens as it grows."
+            },
+            {
+              "skill": "Supporting details",
+              "passage": "Mira waters a seed each morning. She moves the pot into the sunshine and watches a tiny shoot appear.",
+              "prompt": "Which detail shows that Mira is taking care of the seed?",
+              "options": [
+                "She waters it each morning",
+                "She buys a new pot",
+                "She paints the pot blue",
+                "She leaves the pot in a cupboard"
+              ],
+              "correct": 0,
+              "explanation": "Watering the seed each morning is one of the ways Mira helps it grow."
+            }
+          ],
+          "resources": [
+            {
+              "kind": "audio",
+              "title": "Key ideas and details",
+              "description": "Listen to a short explanation with an example.",
+              "asset": "main-idea.m4a",
+              "transcript": "What is the main idea? It is what a passage is mostly about. Mira waters a seed and moves it into the sunlight. One morning a tiny shoot appears. These details support the main idea: Mira helps a seed grow. After reading, ask yourself: what do most of the details tell me?",
+              "duration": "0:18"
+            },
+            {
+              "kind": "reading",
+              "title": "A seed for Mira",
+              "description": "Mira planted a seed in a little pot. Each morning she gave it water and set it near a sunny window. One morning, a tiny green shoot pushed through the soil.\n\nThink about it\nWhat is the passage mainly about? Which details support your answer?",
+              "asset": null
+            },
+            {
+              "kind": "poem",
+              "title": "A little seed",
+              "description": "A short poem about a seed waking up.",
+              "asset": "little-seed.m4a",
+              "transcript": "A little seed lay snug below, and waited for the rain. The sunshine warmed the sleepy earth, then green slipped up again. A tiny leaf looked at the sky, a root reached down below. With drops of rain and morning light, the little seed could grow.",
+              "duration": "0:16"
+            },
+            {
+              "kind": "song",
+              "title": "Grow, little garden",
+              "description": "Sing along about sunlight and rain.",
+              "asset": "garden-song.m4a",
+              "transcript": "Grow little garden, reach for the sun. Sip up the raindrops, one by one. Roots in the ground and leaves in the light. Grow little garden, green and bright.",
+              "duration": "0:17"
+            }
+          ]
+        },
+        {
+          "id": "vocabulary",
+          "name": "Words in context",
+          "description": "Use clues in the passage to work out what unfamiliar words mean.",
+          "number": 5,
+          "questions": [
+            {
+              "skill": "Context clues",
+              "prompt": "The trail was steep, so we climbed slowly. What does steep mean?",
+              "options": [
+                "Very flat",
+                "Rising sharply",
+                "Very noisy",
+                "Covered in leaves"
+              ],
+              "correct": 1,
+              "explanation": "The word climbed and the need to slow down suggest the path rose sharply."
+            },
+            {
+              "skill": "Context clues",
+              "prompt": "Ravi was relieved when he found his missing notebook. What does relieved mean?",
+              "options": [
+                "Ready to run",
+                "Still looking",
+                "No longer worried",
+                "Very hungry"
+              ],
+              "correct": 2,
+              "explanation": "Finding the missing notebook ended the reason Ravi was worried."
+            }
+          ],
+          "resources": []
+        }
+      ]
+    },
+    {
+      "id": "mathematics",
+      "name": "Mathematics",
+      "blocks": [
+        {
+          "id": "operations",
+          "name": "Multiplication and Division",
+          "description": "Solve everyday problems by making equal groups and sharing items equally.",
+          "number": 6,
+          "questions": [
+            {
+              "skill": "Equal groups",
+              "prompt": "There are 6 baskets with 4 apples in each basket. How many apples are there?",
+              "options": [
+                "10",
+                "20",
+                "24",
+                "28"
+              ],
+              "correct": 2,
+              "explanation": "Six equal groups of four is 6 × 4, which equals 24."
+            },
+            {
+              "skill": "Sharing equally",
+              "prompt": "Share 32 pencils equally among 8 students. How many pencils does each student get?",
+              "options": [
+                "4",
+                "6",
+                "8",
+                "24"
+              ],
+              "correct": 0,
+              "explanation": "Divide 32 by 8. Each student gets 4 pencils because 8 × 4 = 32."
+            }
+          ],
+          "resources": [
+            {
+              "kind": "reading",
+              "title": "Draw equal groups",
+              "description": "Draw six circles. Put four dots in each circle. Count the dots, then write a multiplication sentence.\n\nTry it again\nDraw eight circles. Share 32 dots equally across them. How many dots are in each circle?",
+              "asset": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "blocks": [
+        {
+          "id": "plants",
+          "name": "Plants Around Us",
+          "description": "Explore how roots and sunlight help plants grow.",
+          "number": 4,
+          "questions": [
+            {
+              "skill": "Plant structures",
+              "prompt": "Which part usually takes in water from the soil?",
+              "options": [
+                "Flower",
+                "Leaf",
+                "Root",
+                "Fruit"
+              ],
+              "correct": 2,
+              "explanation": "Roots absorb water from the soil and help anchor the plant."
+            },
+            {
+              "skill": "Plant needs",
+              "prompt": "Why should we put a growing seedling near a sunny window?",
+              "options": [
+                "Light helps it make food",
+                "Light replaces water",
+                "Light makes the pot heavier",
+                "Light keeps roots out of soil"
+              ],
+              "correct": 0,
+              "explanation": "Leaves use energy from light to make food for the plant."
+            }
+          ],
+          "resources": [
+            {
+              "kind": "reading",
+              "title": "Look closely at a plant",
+              "description": "Find a plant you can observe safely. Sketch its leaves and stem. Label the roots if you can see them.\n\nWhat can each part do to help the plant grow?",
+              "asset": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "social-studies",
+      "name": "Social Studies",
+      "blocks": [
+        {
+          "id": "environment",
+          "name": "Our Environment",
+          "description": "Explore ways to reduce waste and care for shared spaces.",
+          "number": 4,
+          "questions": [
+            {
+              "skill": "Care for shared spaces",
+              "prompt": "What can you do to reduce waste at school?",
+              "options": [
+                "Bring a reusable water bottle",
+                "Throw paper on the ground",
+                "Take a new plastic cup each day",
+                "Put food scraps in a paper-recycling bin"
+              ],
+              "correct": 0,
+              "explanation": "Refilling a reusable bottle reduces the need for single-use cups and bottles."
+            },
+            {
+              "skill": "Care for shared spaces",
+              "prompt": "After a picnic in a park, what should you do with an empty snack wrapper?",
+              "options": [
+                "Leave it under a bench",
+                "Put it in a waste bin",
+                "Drop it on the grass",
+                "Hide it behind a tree"
+              ],
+              "correct": 1,
+              "explanation": "Putting the wrapper in a waste bin keeps the shared park clean."
+            }
+          ],
+          "resources": [
+            {
+              "kind": "reading",
+              "title": "Care for your neighbourhood",
+              "description": "Look around your neighbourhood with an adult. List one thing people can reuse and one place they can keep clean.\n\nChoose a small action that you can take this week.",
+              "asset": null
+            }
+          ]
+        },
+        {
+          "id": "communities",
+          "name": "People in Our Community",
+          "description": "Explore how people who work in libraries and near schools help their community.",
+          "number": 5,
+          "questions": [
+            {
+              "skill": "Community roles",
+              "prompt": "Who helps people borrow books from a public library?",
+              "options": [
+                "A gardener",
+                "A librarian",
+                "A bus driver",
+                "A firefighter"
+              ],
+              "correct": 1,
+              "explanation": "A librarian helps people find and borrow books at the library."
+            },
+            {
+              "skill": "Community roles",
+              "prompt": "Who helps people stay safe when crossing a busy road near school?",
+              "options": [
+                "A baker",
+                "A tailor",
+                "A librarian",
+                "A crossing guard"
+              ],
+              "correct": 3,
+              "explanation": "A crossing guard helps people cross the road safely."
+            }
+          ],
+          "resources": []
+        }
+      ]
+    },
+    {
+      "id": "english",
+      "catalogId": "english-archive-1",
+      "name": "English",
+      "blocks": [
+        {
+          "id": "story-sequence",
+          "name": "Story Sequence",
+          "description": "Put story events in order and identify what happens before and after each event.",
+          "number": 3,
+          "questions": [
+            {
+              "skill": "Find the first event",
+              "prompt": "Tara packed her bag, walked to school, and met her friend at the gate. What happened first?",
+              "options": [
+                "She met her friend",
+                "She packed her bag",
+                "She walked to school",
+                "She opened the gate"
+              ],
+              "correct": 1,
+              "explanation": "Packing her bag is the first event named in the sentence."
+            },
+            {
+              "skill": "Order events",
+              "prompt": "Which event happened right before Tara met her friend?",
+              "options": [
+                "She walked to school",
+                "She packed her bag",
+                "She ate lunch",
+                "She went home"
+              ],
+              "correct": 0,
+              "explanation": "The sentence lists walking to school immediately before meeting her friend."
+            }
+          ],
+          "resources": [
+            {
+              "kind": "reading",
+              "title": "Retell a routine",
+              "description": "Write three steps you take before school. Use first, next, and finally to put them in order.",
+              "asset": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "science",
+      "catalogId": "science-archive-1",
+      "name": "Science",
+      "blocks": [
+        {
+          "id": "materials-and-their-uses",
+          "name": "Materials and Their Uses",
+          "description": "Explore how the properties of materials make them suitable for everyday uses.",
+          "number": 3,
+          "questions": [
+            {
+              "skill": "Compare properties",
+              "prompt": "Which material would work best for a bag that needs to keep books dry?",
+              "options": [
+                "Tissue paper",
+                "Cotton wool",
+                "Plastic",
+                "Cardboard"
+              ],
+              "correct": 2,
+              "explanation": "Water does not pass through an intact plastic sheet easily."
+            },
+            {
+              "skill": "Match uses",
+              "prompt": "Why is glass useful in a window?",
+              "options": [
+                "It is soft",
+                "It lets light through",
+                "It absorbs water",
+                "It is stretchy"
+              ],
+              "correct": 1,
+              "explanation": "Clear glass is transparent, so light can travel through it."
+            }
+          ],
+          "resources": [
+            {
+              "kind": "reading",
+              "title": "Test a material",
+              "description": "With an adult, put a drop of water on a sheet of paper and on a washable plastic lid. Compare what happens.",
+              "asset": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mathematics",
+      "catalogId": "mathematics-archive-2",
+      "name": "Mathematics",
+      "blocks": [
+        {
+          "id": "place-value",
+          "name": "Place Value",
+          "description": "Use hundreds, tens and ones to read and build three-digit numbers.",
+          "number": 5,
+          "questions": [
+            {
+              "skill": "Read a digit",
+              "prompt": "What is the value of the digit 6 in 463?",
+              "options": [
+                "6",
+                "600",
+                "60",
+                "4"
+              ],
+              "correct": 2,
+              "explanation": "The 6 is in the tens place, so it represents 60."
+            },
+            {
+              "skill": "Build a number",
+              "prompt": "Which number has 3 hundreds, 8 tens, and 2 ones?",
+              "options": [
+                "832",
+                "328",
+                "382",
+                "238"
+              ],
+              "correct": 2,
+              "explanation": "300 plus 80 plus 2 equals 382."
+            }
+          ],
+          "resources": [
+            {
+              "kind": "reading",
+              "title": "Make a place-value table",
+              "description": "Label three columns Hundreds, Tens, and Ones. Place each digit of 572 in its column.",
+              "asset": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "social-studies",
+      "catalogId": "social-studies-archive-2",
+      "name": "Social Studies",
+      "blocks": [
+        {
+          "id": "maps-and-symbols",
+          "name": "Maps and Symbols",
+          "description": "Read map symbols and use a key to explain what they represent.",
+          "number": 3,
+          "questions": [
+            {
+              "skill": "Read a map key",
+              "prompt": "A blue line is labelled “river” in a map key. What does a blue line show on the map?",
+              "options": [
+                "A river",
+                "A school",
+                "A road",
+                "A boundary"
+              ],
+              "correct": 0,
+              "explanation": "The key tells you the meaning of each symbol."
+            },
+            {
+              "skill": "Choose a symbol",
+              "prompt": "What helps someone understand your sketch map?",
+              "options": [
+                "Writing a key",
+                "Erasing every label",
+                "Using random marks",
+                "Turning over the page"
+              ],
+              "correct": 0,
+              "explanation": "A key connects each symbol to the thing it represents."
+            }
+          ],
+          "resources": [
+            {
+              "kind": "reading",
+              "title": "Sketch a map",
+              "description": "Draw a simple map of one room. Use a symbol for the door and another for a window. Add a map key.",
+              "asset": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "english",
+      "catalogId": "english-archive-3",
+      "name": "English",
+      "blocks": [
+        {
+          "id": "writing-clear-instructions",
+          "name": "Writing Clear Instructions",
+          "description": "Use action words and put steps in order to write clear instructions.",
+          "number": 2,
+          "questions": [
+            {
+              "skill": "Use an action verb",
+              "prompt": "Which instruction begins with an action verb?",
+              "options": [
+                "The paper is square",
+                "Divide the sheet in half",
+                "The cup is red",
+                "It might rain"
+              ],
+              "correct": 1,
+              "explanation": "Divide tells the reader what to do."
+            },
+            {
+              "skill": "Check the sequence",
+              "prompt": "Which instruction should come before pouring water into a cup?",
+              "options": [
+                "Put the cup away",
+                "Drink the water",
+                "Place an empty cup on the table",
+                "Wash the empty bottle tomorrow"
+              ],
+              "correct": 2,
+              "explanation": "The cup needs to be ready before you pour into it."
+            }
+          ],
+          "resources": [
+            {
+              "kind": "reading",
+              "title": "Explain a task",
+              "description": "Write clear instructions for folding a sheet of paper in half. Start each step with a verb.",
+              "asset": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mathematics",
+      "catalogId": "mathematics-archive-3",
+      "name": "Mathematics",
+      "blocks": [
+        {
+          "id": "understanding-fractions",
+          "name": "Understanding Fractions",
+          "description": "Describe equal parts of a whole using fractions.",
+          "number": 4,
+          "questions": [
+            {
+              "skill": "Identify a fraction",
+              "prompt": "Three of eight equal slices are left. What fraction is left?",
+              "options": [
+                "8/3",
+                "5/8",
+                "3/5",
+                "3/8"
+              ],
+              "correct": 3,
+              "explanation": "Three of eight equal slices means three eighths."
+            },
+            {
+              "skill": "Compare equal parts",
+              "prompt": "Which shows one quarter?",
+              "options": [
+                "One of four equal parts",
+                "One of three equal parts",
+                "Two of four equal parts",
+                "Four of one equal part"
+              ],
+              "correct": 0,
+              "explanation": "One quarter is one of four equal parts."
+            }
+          ],
+          "resources": [
+            {
+              "kind": "reading",
+              "title": "Draw equal parts",
+              "description": "Draw a rectangle and split it into four equal parts. Shade one part, then label the fraction.",
+              "asset": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "science",
+      "catalogId": "science-archive-4",
+      "name": "Science",
+      "blocks": [
+        {
+          "id": "weather-observations",
+          "name": "Weather Observations",
+          "description": "Use tools and everyday observations to describe temperature and wind.",
+          "number": 2,
+          "questions": [
+            {
+              "skill": "Choose an instrument",
+              "prompt": "What helps us measure air temperature?",
+              "options": [
+                "A ruler",
+                "A thermometer",
+                "A clock",
+                "A compass"
+              ],
+              "correct": 1,
+              "explanation": "A thermometer measures temperature."
+            },
+            {
+              "skill": "Describe evidence",
+              "prompt": "Which observation shows that it is windy?",
+              "options": [
+                "Leaves move sideways",
+                "A puddle is still",
+                "The pavement is warm",
+                "The sky is blue"
+              ],
+              "correct": 0,
+              "explanation": "Moving leaves show the air is moving."
+            }
+          ],
+          "resources": [
+            {
+              "kind": "reading",
+              "title": "Keep a weather log",
+              "description": "Look outside at the same time for three days. Record temperature, clouds, and signs of wind.",
+              "asset": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "social-studies",
+      "catalogId": "social-studies-archive-4",
+      "name": "Social Studies",
+      "blocks": [
+        {
+          "id": "people-who-help-us",
+          "name": "People Who Help Us",
+          "description": "Explore how libraries and public transport help people in a community.",
+          "number": 2,
+          "questions": [
+            {
+              "skill": "Match a role",
+              "prompt": "Who usually helps look after books in a public library?",
+              "options": [
+                "A baker",
+                "A bus driver",
+                "A librarian",
+                "A carpenter"
+              ],
+              "correct": 2,
+              "explanation": "A librarian helps people find, borrow, and return books."
+            },
+            {
+              "skill": "Identify a service",
+              "prompt": "Which service takes people from one stop to another?",
+              "options": [
+                "Waste collection",
+                "Public transport",
+                "A library",
+                "A park"
+              ],
+              "correct": 1,
+              "explanation": "Public transport connects places by carrying passengers between stops."
+            }
+          ],
+          "resources": [
+            {
+              "kind": "reading",
+              "title": "Find a community service",
+              "description": "Choose a place in your community that helps people. Write down who works there and what they do.",
+              "asset": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "repeatLatestWeek": true
+}

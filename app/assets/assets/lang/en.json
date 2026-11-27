@@ -1,0 +1,19 @@
+{
+    "um_welcome": "Welcome to the XSEED Universal App!",
+    "slider_message_1":"Connecting parents and teachers for the success of every child",
+    "slider_message_2":"Get daily updates on your child’s homework",
+    "slider_message_3":"Complete insight of child’s learning & results",
+    "slider_message_4":"Get latest updates from school & superteacher education access",
+    "onboarding_progress_title": "Understand Learning Progress",
+    "onboarding_progress_description": "See assessment results, learning gaps, and simple ways to help your child improve.",
+    "onboarding_homework_title": "Stay on Top of Homework",
+    "onboarding_homework_description": "View homework, access shared materials, and easily communicate with teachers.",
+    "onboarding_practice_title": "Practice Every Week",
+    "onboarding_practice_description": "Get curriculum-aligned questions and engaging reading & listening resources for regular learning.",
+    "onboarding_next": "Next",
+    "onboarding_skip": "Skip",
+    "onboarding_page": "Page @page of @total",
+    "onboarding_sign_up": "New User? Sign Up",
+    "splash_parent_app": "Parent App",
+    "splash_tagline": "Your Child’s\nLearning Companion"
+}
