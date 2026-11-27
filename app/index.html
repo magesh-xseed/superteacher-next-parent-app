@@ -36,7 +36,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "816354274";
+    const serviceWorkerVersion = "2293740788";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -48,7 +48,6 @@
     #boot img { width: min(280px, 70vw); height: auto; }
     #boot i { width: 28px; height: 28px; border-radius: 50%; border: 3px solid #f3d6d6; border-top-color: #CA0000; animation: spin .8s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
-    @media (prefers-reduced-motion: reduce) { #boot i { animation-duration: 2.4s; } }
   </style>
   <div id="boot" role="status" aria-label="Loading the parent app"><div><img src="assets/assets/common/images/logo.webp" alt=""><i></i></div></div>
   <script>
@@ -63,7 +62,7 @@
       navigator.serviceWorker?.getRegistrations?.().then((rs) => rs.forEach((r) => r.unregister()));
       _flutter.loader.loadEntrypoint({
         onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine({canvasKitBaseUrl: "canvaskit/"}).then(function(appRunner) {
+          engineInitializer.initializeEngine({canvasKitBaseUrl: "canvaskit/", useColorEmoji: true}).then(function(appRunner) {
             appRunner.runApp();
           });
         }
